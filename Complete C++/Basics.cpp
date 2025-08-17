@@ -115,4 +115,49 @@ int main() {
     cout << x*x;
 }
 
+#include <iostream>
+using namespace std;
+int main() {
+    int x;
+    cout << "Enter a number: ";
+    cin >> x;
+    cout << "The square of " << x << " is " << x * x << endl;
+}
+
+ Typecasting in C++
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x ;
+    cin >> x;
+    float y = (float)x;
+    cout << y/2;
+}
+
+sum of two numbers using typecasing;
+
+#include <iostream>
+using namespace std;
+int main() {
+    int x ;
+    cout << "Enter first number: ";
+    cin >> x;
+    int y ;
+    cout << "Enter second number: " ;
+    cin >> y;
+    cout << x + y << endl;
+
+}
+
+char data types in c++
+
+#include <iostream>
+using namespace std;
+int main() {
+    char x = 'a';
+    cout << x;
+}
+
+
 
