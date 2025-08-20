@@ -167,3 +167,79 @@ int main() {
 
 // Take 3 positive integer input and print the greatest of them.
 
+// Take input percentage of a student and print the grade according to makrksP:
+
+#include <iostream>
+using namespace std;   
+int main(){
+    int n;
+    cout << "Enter percentage of a student: ";
+    cin >> n;
+    if (n >=81 and n <= 100) {
+        cout << "very Good";
+
+    }
+    if (n>=61 and n <= 80) {
+        cout << "Good";
+
+    }
+    if (n>= 41 and n <= 60){
+        cout << "Average";
+
+    }
+    if (n<= 40){
+        cout << "Poor";
+    }
+
+
+}
+
+calculator 
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n1;
+    cin >> n1;
+    char op;
+    cin >> op;
+    int n2;
+    cin >> n2;
+    if (op == '+') cout << n1 + n2;
+    if (op == '-') cout << n1 - n2;
+    if (op == '*') cout << n1 * n2;
+    }
+
+
+    //  now this is with the switch syntax oky ;
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n1;
+    cin >> n1;
+    char op;  // operator hota hai iska mtlb
+    cin >> op;
+    int n2;
+    cin >> n2;
+    switch (op) {
+        case '+':
+            cout << n1+n2 << endl;
+            break;
+        case '-':
+            cout << n1-n2 << endl;
+
+        case '*':
+            cout << n1*n2 << endl;
+            break;
+        case '/':
+            cout << n1/n2 << endl;
+            break;
+        default:
+            cout << "Invalid hai ye " << endl;
+            break;
+    }
+}
+
+//  Conditionals ends here ............
