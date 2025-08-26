@@ -191,3 +191,69 @@ int main (){
 }
 
 
+Pointers>>>>>>>>>>>>>
+
+How to print address :::::::::
+
+
+#include<iostream>
+using namespace std;
+int main (){
+    int x =3;
+    cout <<&x<<endl;
+}
+
+Pointers x ke address ko store karta hai oky ;>>>
+
+#include<iostream>
+using namespace std;
+int main(){
+    int x = 3;
+    int* p = &x;
+    cout << &x <<endl;
+    cout <<p<< endl;
+}
+
+Dereference Operator >>>>>>>>>>>
+
+
+#include<iostream>
+using namespace std;
+int main (){
+    int x = 3;
+    int* p = &x;
+    cout <<&x<<endl;
+    cout <<p<<endl;
+    cout<<*p<<endl;
+    cout <<&p<< endl; 
+}
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int x=12;
+    int* ptr = &x;
+    cout <<x<<endl;
+    *ptr = 23;
+    cout <<x<<endl;
+}
+
+
+ swap using pointers>>>>>>>>>>>>
+
+#include<iostream>
+using namespace std;
+void swap(int* a, int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+
+}
+int main(){
+    int x = 12;
+    int y = 34;
+    cout <<x<< " " <<y<<endl;
+    swap (&x,&y);
+    cout<<x<<" " <<y<<endl;
+}
