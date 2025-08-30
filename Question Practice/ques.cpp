@@ -283,4 +283,180 @@ int main(){
 
 }
 
+// check the vowel in c++
+
+#include<iostream>
+using namespace std;
+int main(){
+    char c;
+    cout<<"Enter a char : "<<endl;
+    cin>>c;
+    if (c=='a' || c=='A' || c=='e' || c=='E' || c=='i' || c=='I' ||c=='o' || c=='O' || c=='u' || c=='U'  )
+        cout<<"Vowel" <<endl;
+    else{
+        cout<<"constant";
+    }
+}
+
+
+// Fabonacii Seires in c++
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n1=0, n2=1, n3, i;
+    cout<<n1<<n2;
+    for(int i=1; i<=10; i++){
+        n3 =n1 + n2;
+        n1 = n2;
+        n2=n3;
+        cout<<n3;
+
+    }     
+}
+
+
+// for user upto which you want to iterate 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n1=0, n2=1, n3,i,n;
+    cout<<"Enter a number upto which you want to iterate "<<endl;
+    cin>>n;
+    cout<<n1<<n2;
+    for(int i=1; i<=n; i++){
+        n3=n1+n2;
+        n1=n2;
+        n2=n3;
+        cout<<n3;
+    }
+}
+
+
+
+// Factorial in c++ Programming 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i,f;
+    cout<<"Enter the number : ";
+    cin>>n;
+    f=n;
+    for(i=1; i<=n; i++)
+    {
+        f=f*i;
+    }
+    cout<<"Factiorial number is : "<<f;
+
+}
+
+
+// how to check leap year 
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int y;
+    cout << "Enter a year: ";
+    cin >> y;
+
+    if (y % 400 == 0) {
+        cout << "It's a Leap Year" << endl;
+    }
+    else if (y % 100 == 0) {
+        cout << "Not a Leap Year" << endl;
+    }
+    else if (y % 4 == 0) {
+        cout << "It's a Leap Year" << endl;
+    }
+    else {
+        cout << "Not a Leap Year" << endl;
+    }
+
+    return 0;
+}
+
+
+How to check prime number 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i;
+    cout<<"Enter a number : ";
+    cin>>n;
+    for ( i=2; i<n; i++){
+        if(n%i==0){
+             cout<<"Not a Prime no."<<endl;
+             break;
+        }
+    }
+    if (i==n){
+        cout<<"Number is Prime"<< endl;
+    }
+}
+
+
+// print prime number till nth term
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i,k;
+    cout<<"enter nth number: ";
+    cin>>n;
+    for(int i=2; i<n; i++){
+        for (k=2; k<i; k++){
+            if (i%k==0)
+            {
+                cout<<"";
+                break;
+            }
+        }
+        if(k==i)
+        {
+            cout<<k;
+        }
+    }
+}
+
+// sum of digit of a number 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,r,sum=0;
+    cout<<"Enter a number "<<endl;
+    cin>>n;
+    while (n>0)
+    {
+        r=n%10;
+        sum =sum+r;
+        n=n/10;
+    }
+    cout<<"sum is : "<<sum;
+}
+
+
+//  reverse of a Number
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,r,sum=0;
+    cout<<"Enter a number " <<endl;
+    cin>>n;
+    while (n!=0)
+    {
+        r=n%10;
+        sum=sum*10+r;
+        n=n/10;
+    }
+    cout<<"Reverse is : "<<sum;
+}
+
 
