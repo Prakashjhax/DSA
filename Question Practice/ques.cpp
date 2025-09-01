@@ -395,3 +395,183 @@ int main(){
 }
 
 
+// Lcm Program in c++
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,lcm,r;
+    cout<<"Enter two numbers : ";
+    cin>>a>>b;
+    while (true)
+    {
+        lcm=a;
+        r=a%b;
+        if(r==0)
+        {
+            break;
+        }
+        a=a*2;
+    }
+    cout<<"LCM is "<<lcm<<endl;
+
+
+}
+
+
+// HCF and LCM Together 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,lcm,hcf,r,x,y;
+    cout<<"Enter two Number : ";
+    cin>>a>>b;
+    x=a;
+    y=b;
+    while(true){
+        lcm=a;
+        r=a%b;
+        if(r==0){
+            break;
+        }
+        a=a*2;
+    }
+    hcf=x*y/lcm;
+    cout<<"LCM is : "<<lcm<<endl;
+    cout<<"HCF is : "<<hcf;
+
+}
+
+
+// star pattern 1;
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    for(i=1; i<=5; i++){
+        for(j=1; j<=5; j++)
+        {
+            if (j<=i){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+}
+
+// star Pattern 2;
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    for(i=1; i<=5; i++){
+        for(j=1; j<=5; j++){
+            if (j<=6-i){
+                cout<<"*";
+
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+}
+
+
+
+// star pattern 3
+#include<iostream>
+using namespace std;
+int main(){
+    int i, j;
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            if (j>=i)
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+    
+}
+
+// star pattern 4;
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    for (i=1; i<=5; i++ )
+    {
+        for(j=1; j<=5; j++){
+            if (j>=6-i)
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+}
+
+// Piramid star pattern
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    for(i=1; i<=5; i++){
+        for(j=2; j<=9; j++)
+        {
+            if(j>=6-i && j<=4+i){
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        } 
+        cout<<"\n";
+    }
+}
+
+// star pattern 6
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    for(i=1; i<=5; i++)
+    {
+        for(j=1; j<=9; j++)
+        {
+            if(j>=i && j<=10-i)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+
+        }
+        cout<<"\n";
+    }
+}
+
+
